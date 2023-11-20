@@ -2,6 +2,8 @@ FROM webis/tira-ir-starter-pyterrier:0.0.4-base
 
 RUN rm -Rf /workspace/*.ipynb
 
+ADD runs_milestone3 /runs_milestone3
+
 ADD *.ipynb /workspace
 
 ADD example-ir-dataset /tmp-delete-ir-dataset
